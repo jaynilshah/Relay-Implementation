@@ -1,32 +1,30 @@
-import React from 'react'
-import Post from './Post';
-const mockPostData = [
-  {
-    node:{
-      id:"1",
-      firstname: "Star",
-      lastname : "Star"
-    }
-  },
-  {
-    node:{
-      id: "2",
-      firstname : "alpha",
-      lastname : "beta"
-    }
-  }
-]
-class ListPage extends React.Component{
-  render(){
-    return(
-      <div>
-        <div>
-          {mockPostData.map(({node})=>
-            <Post key={node.id} post={node}></Post>
-          )}
-        </div>
-      </div>
-    )
-  }
-}
-export default ListPage
+// import React from 'react'
+// import Post from './Post';
+// import { createFragmentContainer, graphql } from 'react-relay'
+// class ListPage extends React.Component{
+//   render(){
+//     return(
+//       <div>
+//         <div>
+//           {
+//             this.props.User.allPosts.edges.map(({node}) => <Post post={node} />)
+//           }
+//         </div>
+//       </div>
+//     )
+//   }
+// }
+// export default createFragmentContainer(
+//   ListPage,
+//   graphql`
+//   fragment ListPage_viewer on ListPage {
+//     allPosts{
+//       edges{
+//         node{
+//           ...Post_post
+//         }
+//       }
+//     }
+//   }
+//   `
+// )

@@ -4,11 +4,15 @@
   "private": true,
   "dependencies": {
     "babel-plugin-relay": "^4.0.0",
+    "fs": "0.0.1-security",
+    "graphql": "^14.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-relay": "^4.0.0",
     "react-scripts": "3.0.1",
-    "relay-compiler": "^4.0.0"
+    "relay-compiler": "^4.0.0",
+    "relay-runtime": "^4.0.0",
+    "semantic-ui-react": "^0.87.1"
   },
   "scripts": {
     "start": "react-scripts start",
